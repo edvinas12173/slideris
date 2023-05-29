@@ -1,0 +1,126 @@
+.swiper {
+  height: auto;
+}
+
+.swiper-wrapper {
+  margin: 100px 0px 100px 0px;
+
+  @media screen and (min-width: 992px) {
+    height: 480px !important;
+  }
+
+  color: #ffffff !important;
+}
+
+.swiper-slide {
+  background: #3b378b !important;
+  border-radius: 10px;
+
+  img {
+    @media screen and (min-width: 992px) {
+      margin-top: -60px;
+    }
+
+    @media screen and (max-width: 991px) {
+      margin-bottom: 30px;
+    }
+
+    width: auto;
+    height: 600px;
+    max-height: 600px;
+  }
+}
+
+.swiper-scrollbar {
+  position: relative !important;
+  background: #7a7fbd !important;
+  height: 1px !important;
+  margin: 0 auto;
+
+  @media screen and (max-width: 991px) {
+    width: calc(100% - 5 * var(--swiper-scrollbar-sides-offset, 4%)) !important;
+  }
+}
+
+.swiper-scrollbar-drag {
+  top: -2px !important;
+  background: #7a7fbd !important;
+  height: 5px !important;
+  border-radius: 0px !important;
+}
+
+.scrollbarNumber {
+  position: absolute;
+  margin-top: -30px;
+  font-family: Montserrat, sans-serif;
+  color: #f15c23;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.swiper-custom-block {
+  position: relative;
+  height: 110px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: relative !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-size: cover;
+  top: -5px !important;
+  display: block !important;
+}
+
+.swiper-button-next {
+  float: right !important;
+  background-image: url("/wp-content/themes/initializr/assets/images/arrow-next.png");
+}
+
+.swiper-button-prev {
+  background-image: url("/wp-content/themes/initializr/assets/images/arrow-prev.png");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: '' !important;
+}
+
+.slider-block {
+  @media screen and (min-width: 992px) {
+    padding: 110px 0px 0px 100px;
+    height: 480px;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 30px;
+  }
+
+  overflow: hidden;
+}
+
+.slider-number {
+  color: #f15c23;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.slider-title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.slider-content {
+  font-size: 1rem;
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.slider-number, .slider-title, .slider-content {
+  font-family: Montserrat, sans-serif;
+  line-height: 100%;
+}

@@ -1,0 +1,145 @@
+{
+    "key": "group_5eda34ee47ef1",
+    "title": "Popup settings",
+    "fields": [
+        {
+            "key": "field_5eda37dfffb45",
+            "label": "Enabled",
+            "name": "popup_enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5eda3512842d2",
+            "label": "Trigger by",
+            "name": "popup_trigger",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "timeout": "Timeout (after page is loaded)",
+                "click": "On click"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5eda390406500",
+            "label": "Refresh",
+            "name": "popup_refresh",
+            "type": "number",
+            "instructions": "Show popup again after specified number of days",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5eda3560842d3",
+            "label": "Delay",
+            "name": "popup_delay",
+            "type": "number",
+            "instructions": "Delay in seconds before popup is shown",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eda3512842d2",
+                        "operator": "==",
+                        "value": "timeout"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5eda3590842d4",
+            "label": "On click selector",
+            "name": "popup_click_selector",
+            "type": "text",
+            "instructions": "Selector, e.g.: #open-popup",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eda3512842d2",
+                        "operator": "==",
+                        "value": "click"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "popups"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1591366620
+}

@@ -1,0 +1,184 @@
+/*------------------------------------*\
+  #BOX MODEL SET
+\*------------------------------------*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------*\
+  #SITE LAYOUT
+\*------------------------------------*/
+
+#wpadminbar {
+    display: none;
+}
+
+html {
+
+}
+
+body {
+
+}
+
+.site {
+
+}
+
+.site-center {
+}
+
+.site-block {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+
+/* Responsive layout */
+
+@include respond-to(r1440) {
+
+    .site-block {
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+@include respond-to(r767) {
+
+    .site-block {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+
+/*------------------------------------*\
+  #LAYOUT BLOCKS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  #COLUMN SYSTEM
+\*------------------------------------*/
+
+.h-row {
+    margin: 0 -20px;
+    @include respond-to(r1024) {
+        margin: 0 -15px;
+    }
+    @include respond-to(r640) {
+        margin: 0 -10px;
+    }
+}
+
+
+.col-1-of-2,
+.col-1-of-3,
+.col-2-of-3,
+.col-1-of-4,
+.col-3-of-4,
+.col-1-of-5,
+.col-2-of-5,
+.col-3-of-5,
+.col-1-of-6,
+.col-1-of-12 {
+    float: left;
+}
+
+.h-row > .col-1-of-2,
+.h-row > .col-1-of-3,
+.h-row > .col-2-of-3,
+.h-row > .col-1-of-4,
+.h-row > .col-3-of-4,
+.h-row > .col-1-of-5,
+.h-row > .col-2-of-5,
+.h-row > .col-3-of-5,
+.h-row > .col-1-of-6,
+.h-row > .col-1-of-12 {
+    padding: 0 20px;
+    @include respond-to(r1024) {
+        padding: 0 15px;
+    }
+    @include respond-to(r640) {
+        padding: 0 10px;
+    }
+}
+
+.h-row > .no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.h-row > .no-padding-right {
+    padding-right: 0px;
+}
+
+.h-row > .no-padding-left {
+    padding-left: 0px;
+}
+
+.col-1-of-2.fr,
+.col-1-of-3.fr,
+.col-2-of-3.fr,
+.col-1-of-4.fr,
+.col-3-of-4.fr,
+.col-1-of-5.fr,
+.col-2-of-5.fr,
+.col-3-of-5.fr,
+.col-1-of-6.fr,
+.col-1-of-6.fr {
+    float: right;
+}
+
+.col-1-of-2 {
+    width: 50%;
+}
+
+.col-1-of-3 {
+    width: 33.33333%;
+}
+
+.col-2-of-3 {
+    width: 66.6666%;
+}
+
+.col-1-of-4 {
+    width: 25%;
+}
+
+.col-3-of-4 {
+    width: 75%;
+}
+
+.col-1-of-5 {
+    width: 20%;
+}
+
+.col-2-of-5 {
+    width: 40%;
+}
+
+.col-3-of-5 {
+    width: 60%;
+}
+
+.col-1-of-6 {
+    width: 16.66666%
+}
+
+.col-1-of-12 {
+    width: 8.33333%;
+}

@@ -1,0 +1,37 @@
+/* General popup styles */
+
+.site-popup {
+    max-width: 730px;
+    width: 100%;
+}
+
+    .fancybox-slide>.site-popup,
+    .site-popup {
+        padding: 0;
+    }
+
+
+
+@include respond-to(r1024) {
+    .site-popup {
+        max-width: 87.5%;
+    }
+}
+
+
+
+
+/* Global popup (image+link) */
+
+.global-popup {
+
+}
+
+    .global-popup > a {
+        font-size: 0;
+    }
+
+    .global-popup img {
+        display: block;
+        width: 100%;
+    }

@@ -1,0 +1,108 @@
+/*------------------------------------*\
+  #HELPERS
+\*------------------------------------*/
+
+.h-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.h-fl {
+    float: left;
+}
+
+.h-fr {
+    float: right;
+}
+
+.h-tar {
+    text-align: right;
+}
+
+.h-tac {
+    text-align: center;
+}
+
+.h-tal {
+    text-align: left;
+}
+
+.h-date {
+    color: #ccc;
+}
+
+.h-bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/* Vertical aligner */
+
+.h-v-align:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 1px;
+    margin-right: -5px;
+}
+
+.h-v-align__content {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 1px);
+}
+
+
+/* ------ Clearfix ------ */
+
+.h-row:before,
+.h-row:after,
+.h-clearfix:before,
+.h-clearfix:after,
+.form-row:before,
+.form-row:after {
+    content: "";
+    display: table;
+}
+
+.h-row:after,
+.h-clearfix:after,
+.form-row:after {
+    clear: both;
+}
+
+.h-row,
+.h-clearfix,
+.form-row {
+    zoom: 1;
+}
+
+.h-hide {
+    display: none;
+}
+
+/* Responsive helpers */
+
+
+.h-responsive-show {
+    display: none;
+}
+
+.h-responsive-hide {
+
+}
+
+@include respond-to(r1024) {
+
+    .h-responsive-show {
+        display: block;
+    }
+
+    .h-responsive-hide {
+        display: none;
+    }
+
+}
